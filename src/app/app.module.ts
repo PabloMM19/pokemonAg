@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { AdminPokemonPlistRoutedComponent } from './components/pokemon/admin-pokemon-plist-routed/admin-pokemon-plist-routed.component';
 import { AdminPokemonPlistUnroutedComponent } from './components/pokemon/admin-pokemon-plist-unrouted/admin-pokemon-plist-unrouted.component';
 import { PokemonAjaxService } from './service/pokemon.ajax.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,12 @@ import { PokemonAjaxService } from './service/pokemon.ajax.service';
     AdminPokemonPlistUnroutedComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    TableModule
   ],
   providers: [
     
